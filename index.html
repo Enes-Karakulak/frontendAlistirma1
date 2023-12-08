@@ -12,11 +12,55 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      display: flex;
+      background-color: hsl(227, 100%, 5%);
+      min-height: 100vh; /* body height ını ekran büyüklüğü yap */
+      margin: 0;  /* tarayıının kenar boşluklarından kurtul */
+      align-items: center; /* dikey ortalar */
+      justify-content: center; /* yatay ortalar */
+      /*  */
+    }
+    section{
+      min-width: 70%;
+      background-color: hsl(266, 100%, 8%);
+      padding: 0;
+      margin: 0;
+    }
+    main{
+      width: 50%;
+      float: left;
+      padding: 0px;
+      margin: 0;
+    }
+    figure{
+      background-color: rgb(63, 0, 63);
+      width: 50%;
+      height: 100%;
+      float: right;
+      padding: 0;
+      margin: 0;
+    }
+    h1{
+      color: white;
+    }
   </style>
 </head>
 <body>
+  <section>
+    <main>
+      <h1>Get insights that help your business grow.</h1>
+    </main>
+    <figure>
+      <img src="images/image-header-desktop.jpg" alt="image-header-desktop"
+       style="max-width:100%;height:auto; opacity: 0.5;">
+    </figure>
+  </section>
 
-  Get insights that help your business grow.
+
+
+
+  <!-- Get insights that help your business grow.
 
   Discover the benefits of data analytics and make better decisions regarding revenue, customer 
   experience, and overall efficiency.
@@ -28,6 +72,6 @@
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
