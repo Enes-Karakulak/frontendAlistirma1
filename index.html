@@ -5,57 +5,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Stats preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    body{
+    body {
+      background-color:  hsl(233, 47%, 7%);
       display: flex;
-      background-color: hsl(227, 100%, 5%);
-      min-height: 100vh; /* body height ını ekran büyüklüğü yap */
-      margin: 0;  /* tarayıının kenar boşluklarından kurtul */
-      align-items: center; /* dikey ortalar */
-      justify-content: center; /* yatay ortalar */
-      /*  */
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0px;
+    }
+
+    main{
+      height: 446px;
+      width: 1080px;
+      background-color: hsl(244, 38%, 16%);
+
+    }
+
+    nav{
+      background-color: #1b0039;
+      float: left;
+      height: 386px;
+      width: 440px;
+      margin: 0px;
+      padding: 50px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      
+    }
+
+    figure{
+      background-color: hsl(277, 100%, 14%);
+      float: left;
+      height: 446px;
+      width: 540px;
+      margin: 0px;
+    }
+
+    h1{
+      font-size: 41px;
+      color: hsl(0, 0%, 100%);
+      font-family: 'Inter', sans-serif;
+    }
+    h2{
+      font-size: 30px;
+      color: hsl(0, 0%, 100%);
+      margin: 0px;
+    }
+    article{
+      margin-top: 15px;
+      height: 100%;
+      width: 100%;
     }
     section{
-      min-width: 70%;
-      background-color: hsl(266, 100%, 8%);
-      padding: 0;
-      margin: 0;
-    }
-    main{
-      width: 50%;
+      color: hsla(0, 0%, 100%, 0.75);
+      height: 70px;
+      width: 95px;
       float: left;
-      padding: 0px;
-      margin: 0;
+      margin-right: 50px;
+      margin-top: 30px;
     }
-    figure{
-      background-color: rgb(63, 0, 63);
-      width: 50%;
-      height: 100%;
-      float: right;
-      padding: 0;
-      margin: 0;
-    }
-    h1{
-      color: white;
+    .pStatHeadings{
+      margin: 0px;
+      text-transform: uppercase;
     }
   </style>
+  
 </head>
+
 <body>
-  <section>
     <main>
-      <h1>Get insights that help your business grow.</h1>
+      <nav>
+        <div>
+          <h1>
+            Get <span style="color: hsl(277, 64%, 61%)">insights</span> that help your business grow.
+          </h1>
+          <p style="color: hsla(0, 0%, 100%, 0.75);font-size: 22px; ">
+            Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+            experience, and overall efficiency.
+            <article>
+              <section>
+                <h2>
+                  10k+
+                </h2>
+                <p class="pStatHeadings">
+                  companies
+                </p>
+              </section>
+              <section>
+                <h2>
+                  314
+                </h2>
+                <p class="pStatHeadings">
+                  templates
+                </p>
+              </section>
+              <section>
+                <h2>
+                  12m+
+                </h2>
+                <p class="pStatHeadings">
+                  queries
+                </p>
+              </section>
+            </article>
+            
+          </p>
+
+        </div>
+      </nav>
+      
+      <figure>
+        <img src="images/image-header-desktop.jpg" alt="image-header-desktop" style="opacity: 0.4;">
+      </figure>
     </main>
-    <figure>
-      <img src="images/image-header-desktop.jpg" alt="image-header-desktop"
-       style="max-width:100%;height:auto; opacity: 0.5;">
-    </figure>
-  </section>
+
 
 
 
